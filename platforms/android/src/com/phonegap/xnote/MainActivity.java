@@ -20,15 +20,36 @@
 package com.phonegap.xnote;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+
+import com.j256.ormlite.dao.Dao;
+import com.networkbench.agent.impl.NBSAppAgent;
+import com.phonegap.xnote.dao.DaoUtil;
+import com.phonegap.xnote.dao.UserDao;
+import com.phonegap.xnote.model.User;
+
 import org.apache.cordova.*;
+
+import java.sql.SQLException;
+
+import butterknife.InjectView;
 
 public class MainActivity extends CordovaActivity
 {
+
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        // Set by <content src="index.html" /> in config.xml
-        loadUrl(launchUrl);
+        setContentView(R.layout.main);
+        NBSAppAgent.setLicenseKey("9a48278e5f4342b48f9ff4223e9bf2b1").withLocationServiceEnabled(true).start(this);
     }
+
+    public void sendReport(View view){
+        String str = null;
+        str.toCharArray();
+    }
+
 }
