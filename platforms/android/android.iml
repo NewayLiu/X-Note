@@ -81,10 +81,9 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 22 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="ormlite-android-4.48" level="project" />
-    <orderEntry type="library" exported="" name="ormlite-core-4.48" level="project" />
     <orderEntry type="library" exported="" name="butterknife-6.1.0" level="project" />
-    <orderEntry type="library" exported="" name="nbs.newlens.agent-2.2.4" level="project" />
     <orderEntry type="module" module-name="CordovaLib" exported="" />
+    <orderEntry type="module" module-name="xnotedata" exported="" />
+    <orderEntry type="module" module-name="xnoteservice" exported="" />
   </component>
 </module>

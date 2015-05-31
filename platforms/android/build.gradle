@@ -20,7 +20,7 @@
 // GENERATED FILE! DO NOT EDIT!
 
 apply plugin: 'android'
-apply plugin: 'newlens'
+
 
 buildscript {
     repositories {
@@ -248,15 +248,13 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: '*.jar')
-    compile "com.j256.ormlite:ormlite-android:4.48"
-    compile "com.networkbench.newlens.agent.android:nbs.newlens.agent:2.2.4"
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile project(':xnotedata')
+    compile project(':xnoteservice')
     compile 'com.jakewharton:butterknife:6.1.0'
-
-
     // SUB-PROJECT DEPENDENCIES START
-    debugCompile project(path: ":CordovaLib", configuration: "debug")
-    releaseCompile project(path: ":CordovaLib", configuration: "release")
+    debugCompile project(path: ':CordovaLib', configuration: 'debug')
+    releaseCompile project(path: ':CordovaLib', configuration: 'release')
     // SUB-PROJECT DEPENDENCIES END
 }
 

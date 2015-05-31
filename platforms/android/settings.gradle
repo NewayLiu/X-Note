@@ -1,3 +1,3 @@
+include ':xnotedata', ':xnoteservice', ':xnoteservice-db-impl', ':'
 // GENERATED FILE - DO NOT EDIT
-include ":"
 include ":CordovaLib"
